@@ -1,0 +1,36 @@
+section#admin {
+    .name {
+        display: inline-block;
+        width: 60%;
+    }
+    .score {
+        display: inline-block;
+        width: 30%;
+        text-align: right;
+    }
+    .header {
+        font-weight: bold;
+    }
+    .well {
+        margin-top: 15px;
+        overflow: auto;
+    }
+
+    .expandable {
+        display: none;
+    }
+    input.form-control {
+        width: 69%;
+        display: inline-block;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .btn-success {
+        width: 30%;
+    }
+    .btn-danger {
+        margin-top: 15px;
+        width: 100%;
+    }
+}

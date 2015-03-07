@@ -1,3 +1,31 @@
 <template name='admin'>
-admin page here
+  <section id='admin'>
+    <div class='container-fluid'>
+      {{> banner}}
+      <div class='col-md-6 col-md-offset-3'>
+        <div class='jumbotron'>
+          <h2>Team List</h2>
+          <ul class="list-group">
+            <li class='list-group-item'>
+              <span class='name header'> Team Name </span>
+              <span class='score header'> Score </span>
+            </li>
+            {{#each teams}}
+              <li class='list-group-item'> 
+                <span class='name'> {{name}} </span>
+                <span class='score'>{{score}}</span>
+                <div class='well expandable'>
+                  <div class='wrapper'>
+                    <input class='form-control' type='number'>
+                    <button class="btn btn-success"> + Add Points </button>
+                    <button class="btn btn-danger pull-right"> &times; Delete Team </button>
+                  </div>
+                </div>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>

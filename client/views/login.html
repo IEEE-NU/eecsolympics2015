@@ -1,16 +1,18 @@
 <template name='login'>
   <section id='login'>
     <div class='container-fluid'>
-      <div class='col-md-8 col-md-offset-2 gray-container'>
+      {{> banner}}
+      <div class='col-md-4 col-md-offset-4'>
         <form>
-          <h1 class='text-center'> Breadcrumbs Login </h1>
-          <div class='entry text-center'>
-            <h5> Username: </h5>
-            <input type='text' name='username' required>
-            <h5> Password: </h5>
-            <input type='password' name='password' required>
-            <input class='btn btn-blue' type='submit' value='login' required>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input name='username' type="text" class="form-control" id="username" placeholder="Enter admin login">
           </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input name='password' type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+          <button type='submit' class='btn btn-success'> Login </button>
         </form>
       </div>
     </div>
