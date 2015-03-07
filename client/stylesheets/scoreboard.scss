@@ -1,0 +1,23 @@
+section#scoreboard {
+
+    li {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    .name {
+        font-size: 1.6em;
+        font-weight: 200;
+        width: 70%;
+    }
+
+    .score {
+        width: 30%;
+        text-align: right;
+        font-size: 2em;
+        font-weight: bold;
+        color: #777;
+    }
+}

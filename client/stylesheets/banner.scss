@@ -1,0 +1,17 @@
+.banner {
+    .abs-wrapper {
+        position: absolute;
+        top: 25%;
+        text-align: center;
+        width: 100%;
+        z-index: 5;
+    }
+    h2 {
+        color: #e8800d;
+    }
+    img {
+        max-height: 40%;
+        max-width: 40%;
+        opacity: 0.2;
+    }
+}
